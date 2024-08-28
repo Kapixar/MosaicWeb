@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MOSAIC Project</title>
+        <link href="tickets.css" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    </head>
+<body>
+    <figure id="theme">🌞</figure>
+    <menu>
+        <div>
+            <img src="logo.png" alt="logo">
+            <h1>
+                <span>M</span>
+                <span>O</span>
+                <span>S</span>
+                <span>A</span>
+                <span>I</span>
+                <span>C</span>
+            </h1>
+        </div>
+        <canvas width="318" height="318"></canvas>
+        <span class="progress_bar" id="ships_ready">Ships painted</span>
+        <span class="progress_bar" id="iron_gathered">Iron collected</span>
+    </menu>
+    <p id="error_bar"></p>
+    <a class="btn-leading" target="_blank" href="https://discord.gg/uNgD6vv67c" class="discord">Join project on Discord</a>
+
+    <span>Helping MOSAIC gains you tickets (🎟) for Legacy Fabricator and Flux raffle</span>
+    <ul>How to get tickets:
+        <li>Uploading at least one image = 1 🎟</li>
+        <li>Donating <span id="tickets_iron">2.5k</span> iron = 1 🎟</li>
+        <li>Painting whole ship = <span id="tickets_ship">12</span>🎟</li>
+    </ul>
+    <h2>Contributors List</h2>
+    <!-- <p>If you think that your entry is displayed incorectly, contact I am Shrek on discord.</p> -->
+    <span>Total 🎟: <span id="tickets_sum">0</span></span>
+    <span>Iron collected: <span id="iron_collected">0</span>k</span>
+    <span>Iron donated: <span id="iron_donated">0</span>k</span>
+    <div>
+        <button id="refresh" class="btn-leading">⟳</button>
+        <input type="text" placeholder="Search Player" id="search_user">
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Discord / DSA</th>
+                <th>Tickets</th>
+                <th colspan="2">Image posted</th>
+                <th colspan="2">Iron donated</th>
+                <th colspan="2">Ships painted</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="ticket.js"></script>
+</body>
+</html>
